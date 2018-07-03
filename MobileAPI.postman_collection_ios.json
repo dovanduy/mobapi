@@ -3930,7 +3930,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/getZone",
+			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/getCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3940,15 +3940,19 @@
 					},
 					{
 						"key": "lan_ip",
-						"value": "10.20.86.16"
+						"value": "10.20.86.21"
 					},
 					{
-						"key": "Connection",
-						"value": "keep-alive"
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58"
 					},
 					{
 						"key": "Accept",
 						"value": "*/*"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
 					},
 					{
 						"key": "Content-Type",
@@ -3976,7 +3980,7 @@
 					},
 					{
 						"key": "xg",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDUxMzM3OTg1Mg=="
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDU5ODkzMTMwMA=="
 					},
 					{
 						"key": "User-Agent",
@@ -3984,7 +3988,7 @@
 					},
 					{
 						"key": "visitor_id",
-						"value": "6EA3243D3F234FA7-27E4DEFBAD033015"
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
 					},
 					{
 						"key": "os_version",
@@ -3992,23 +3996,19 @@
 					},
 					{
 						"key": "xc",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
 					},
 					{
 						"key": "v",
 						"value": "5.0.1"
-					},
-					{
-						"key": "Content-Length",
-						"value": "132"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"latitude\": \"\",\r\n\t\"longitude\": \"\",\r\n\t\"pincode\": \"\"\r\n}"
+					"raw": "{\r\n\t\"cartId\": \"33659d8f-57d4-42ea-9461-4db8487cf182\"\r\n}"
 				},
 				"url": {
-					"raw": "https://mobileapi.snapdeal.com/service/getZone",
+					"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/getCart",
 					"protocol": "https",
 					"host": [
 						"mobileapi",
@@ -4017,14 +4017,16 @@
 					],
 					"path": [
 						"service",
-						"getZone"
+						"nativeCart",
+						"v2",
+						"getCart"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/getZone",
+			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/updateCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -4034,7 +4036,199 @@
 					},
 					{
 						"key": "lan_ip",
-						"value": "10.20.86.16"
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDU5ODkzMTMwMA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"items\": [{\r\n\t\t\"vendorCode\": \"S888d4\",\r\n\t\t\"catalogId\": 642110460110,\r\n\t\t\"supc\": \"SDL577663225\",\r\n\t\t\"quantity\": \"2\"\r\n\t}],\r\n\t\"cartId\": \"33659d8f-57d4-42ea-9461-4db8487cf182\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/updateCart",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"nativeCart",
+						"v2",
+						"updateCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/removeItemFromCart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDU5ODkzMTMwMA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"cartId\": \"33659d8f-57d4-42ea-9461-4db8487cf182\",\r\n\t\"itemsTORemove\": [{\r\n\t\t\"vendorCode\": \"S888d4\",\r\n\t\t\"catalogId\": 642110460110,\r\n\t\t\"supc\": \"SDL577663225\"\r\n\t}]\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/removeItemFromCart",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"nativeCart",
+						"v2",
+						"removeItemFromCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/get/product/verifyPinCode?apiKey=snapdeal&checkExchangeServiceable=0&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234&zone=Z26",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
 					},
 					{
 						"key": "Connection",
@@ -4070,7 +4264,7 @@
 					},
 					{
 						"key": "xg",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDUxMzM3OTg1Mg=="
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMDI5Mjk1MA=="
 					},
 					{
 						"key": "User-Agent",
@@ -4078,7 +4272,7 @@
 					},
 					{
 						"key": "visitor_id",
-						"value": "6EA3243D3F234FA7-27E4DEFBAD033015"
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
 					},
 					{
 						"key": "os_version",
@@ -4086,24 +4280,20 @@
 					},
 					{
 						"key": "xc",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
 					},
 					{
 						"key": "v",
 						"value": "5.0.1"
 					},
 					{
-						"key": "Content-Length",
-						"value": "132",
-						"disabled": true
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; Megatron=!8DGU+DzaG+6UiLhuYqIiwFIbO0QqDPZogrQl2TODrCclsAM7md/i6qzij4tCdWkkPseWX7MlK6OqdFY="
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"latitude\": \"\",\r\n\t\"longitude\": \"\",\r\n\t\"pincode\": \"\"\r\n}"
-				},
+				"body": {},
 				"url": {
-					"raw": "https://mobileapi.snapdeal.com/service/getZone",
+					"raw": "https://mobileapi.snapdeal.com/service/get/product/verifyPinCode?apiKey=snapdeal&checkExchangeServiceable=0&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234&zone=Z26",
 					"protocol": "https",
 					"host": [
 						"mobileapi",
@@ -4112,7 +4302,1351 @@
 					],
 					"path": [
 						"service",
-						"getZone"
+						"get",
+						"product",
+						"verifyPinCode"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "snapdeal"
+						},
+						{
+							"key": "checkExchangeServiceable",
+							"value": "0"
+						},
+						{
+							"key": "pincode",
+							"value": "110045"
+						},
+						{
+							"key": "requestProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "responseProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "supc",
+							"value": "SDL139991234"
+						},
+						{
+							"key": "zone",
+							"value": "Z26"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/get/bundle/getBundleProducts?apiKey=snapdeal&bundleIndex=1&bundleType=ALL&bundlingVersion=V2&pageNumber=0&pageSize=10&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMDI5Mjk1MA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; Megatron=!8DGU+DzaG+6UiLhuYqIiwFIbO0QqDPZogrQl2TODrCclsAM7md/i6qzij4tCdWkkPseWX7MlK6OqdFY="
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/get/bundle/getBundleProducts?apiKey=snapdeal&bundleIndex=1&bundleType=ALL&bundlingVersion=V2&pageNumber=0&pageSize=10&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"get",
+						"bundle",
+						"getBundleProducts"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "snapdeal"
+						},
+						{
+							"key": "bundleIndex",
+							"value": "1"
+						},
+						{
+							"key": "bundleType",
+							"value": "ALL"
+						},
+						{
+							"key": "bundlingVersion",
+							"value": "V2"
+						},
+						{
+							"key": "pageNumber",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "pincode",
+							"value": "110045"
+						},
+						{
+							"key": "requestProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "responseProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "supc",
+							"value": "SDL139991234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/get/bundle/getBundleProducts?apiKey=snapdeal&bundleIndex=1&bundleType=ALL&bundlingVersion=V2&pageNumber=0&pageSize=10&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMDI5Mjk1MA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; Megatron=!8DGU+DzaG+6UiLhuYqIiwFIbO0QqDPZogrQl2TODrCclsAM7md/i6qzij4tCdWkkPseWX7MlK6OqdFY="
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/get/bundle/getBundleProducts?apiKey=snapdeal&bundleIndex=1&bundleType=ALL&bundlingVersion=V2&pageNumber=0&pageSize=10&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"get",
+						"bundle",
+						"getBundleProducts"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "snapdeal"
+						},
+						{
+							"key": "bundleIndex",
+							"value": "1"
+						},
+						{
+							"key": "bundleType",
+							"value": "ALL"
+						},
+						{
+							"key": "bundlingVersion",
+							"value": "V2"
+						},
+						{
+							"key": "pageNumber",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "pincode",
+							"value": "110045"
+						},
+						{
+							"key": "requestProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "responseProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "supc",
+							"value": "SDL139991234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/get/product/getRefreshProductDetails?apiKey=snapdeal&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234&zone=Z26",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMDI5Mjk1MA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; Megatron=!8DGU+DzaG+6UiLhuYqIiwFIbO0QqDPZogrQl2TODrCclsAM7md/i6qzij4tCdWkkPseWX7MlK6OqdFY=; _sdDPPageId=1530599303212_7952_153059930091494865; _sdRefEvtCookie=%7B%22refEvt%22%3A%22%22%2C%22refEvtId%22%3A%22%22%7D; _sdRefPgCookie=%7B%22refPg%22%3A%22marketingLanding%22%2C%22refPgId%22%3A%221530599303212_7952_153059930091494865%22%7D; alps=aoc; deviceos=iPhone; lt=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; s_sess=%20s_ppv%3D28%3B; sd.zone=Z26; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153059930091494865; vt=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/get/product/getRefreshProductDetails?apiKey=snapdeal&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234&zone=Z26",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"get",
+						"product",
+						"getRefreshProductDetails"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "snapdeal"
+						},
+						{
+							"key": "pincode",
+							"value": "110045"
+						},
+						{
+							"key": "requestProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "responseProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "supc",
+							"value": "SDL139991234"
+						},
+						{
+							"key": "zone",
+							"value": "Z26"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/personalization/getRecentSearches?apiKey=snapdeal&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMDI5Mjk1MA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=x21pj6nb9tjqgu; SCOUTER=zh4pcbe11re58"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/personalization/getRecentSearches?apiKey=snapdeal&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"personalization",
+						"getRecentSearches"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "snapdeal"
+						},
+						{
+							"key": "requestProtocol",
+							"value": "PROTOCOL_JSON"
+						},
+						{
+							"key": "responseProtocol",
+							"value": "PROTOCOL_JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/mobapi/getUserCoupons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYwMjQzNzU3OA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; CartQty=2; _col_uuid=29adba40-204c-4c57-84a6-4e045d743bd5-6mes~1; _sdDPPageId=1530601602033_1347_153059930091494865; _sdRefEvtCookie=%7B%22refEvt%22%3A%22%22%2C%22refEvtId%22%3A%22%22%7D; _sdRefPgCookie=%7B%22refPg%22%3A%22marketingLanding%22%2C%22refPgId%22%3A%221530601602033_1347_153059930091494865%22%7D; _sdpe=; advId=B13F8B84-693F-478A-A93A-8F646156E06F; alps=aoc; androidId=; appType=app; appVersion=5.0.1; app_utm_source=direct_5.0.1; app_utm_source_from_app=iPhoneApp; avc=1.0; cartId=57bced40-14b5-46f7-ba3f-7f97a6528a83; deApp=true; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceid=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; eid=; hide_header_msite=false; instanceId=; ios_app_version=true; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; platform=ios; platformType=IOSAPP; s_pers=%20s_vi%3D07F7F8C5A36146DF-1CC4085EF87B8B0E%7C1688367582305%3B%20gpv_pn%3Dwap%253AmarketingLandingPage%7C1530603404590%3B%20s_nr7%3D1530601604595-New%7C1531206404595%3B%20s_nr30%3D1530601604598-New%7C1533193604598%3B%20s_nr90%3D1530601604601-New%7C1540969604601%3B%20s_nr365%3D1530601604605-New%7C1562137604605%3B%20s_nr36500%3D1530601604608-New%7C4684201604608%3B; sd.zone=Z26; sdrmc=\"VmpVd0l6VXpaVGszTm1KbExURXhNbVF0TkRFd015MDVabVU0TFRGa016WmlNR00wWldFNVl3QHNucGRlLmluOjE1OTI4MDg4NDQ3NzY6U0Q6SlBGSkpSRTRCbDZ3ZTJkcTdBc3dLeHFnY1BKZGZmQ09TUzhDSTh4VXdTeEJhdk9wZnlPY2dOZkNhZTVZcmhCNWFOT0FNcXF2MTNKZkNmWVI2VHJNeVkxWEJvck1qMGkySDJ2YTd6azlfZWw0b01IV2xPa0JhLTRlSFRiR2xIRTA6ZjFjNjhiYzkwNDA3MmE0OTA1Y2Y0ODBkMjhkNDI5OTU6Y2EwNmZhMDgyMTJmYzRkMmQ0M2QwOTc0YzA1OWZmNjE=\"; siteId=105; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153059930091494865; visitorId=07F7F8C5A36146DF-1CC4085EF87B8B0E; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; wap_mCampaignOffer=womensfashion-eoss_WAP_campaignID_HeroTemplate_4H_2_sarees_4h__Dress%20Materials_Upto%2080%25%20off_1529575860000_1593455400000; xc=\"bnVsbA==\"; xg=\"bnVsbHx8MTUzMDYwMjY0NDk0OA==\""
+					},
+					{
+						"key": "Login-Token",
+						"value": "SD:Vzg3Y7c_liGZYGiBRgVWoxo9W_qF-UDkgVv0d3sqnvRBavOpfyOcgNfCae5YrhB5aNOAMqqv13JfCfYR6TrMyWSdgZAMEdWxmGY-krAdjW5jJrpfUEDSxyyteQKhXobH"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "114",
+						"disabled": true
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"promoCouponsType\": \"ALL\",\r\n\t\"deviceType\": \"APP\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/mobapi/getUserCoupons",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"mobapi",
+						"getUserCoupons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/wishlist/addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYwNDM1NjQ5MQ=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; CartQty=0; _col_uuid=29adba40-204c-4c57-84a6-4e045d743bd5-6mes~1; _sdDPPageId=1530602233893_1008_153059930091494865; _sdRefEvtCookie=%7B%22refEvt%22%3A%22%22%2C%22refEvtId%22%3A%22%22%7D; _sdRefPgCookie=%7B%22refPg%22%3A%22home%22%2C%22refPgId%22%3A%221530602233893_1008_153059930091494865%22%7D; _sdpe=; advId=B13F8B84-693F-478A-A93A-8F646156E06F; alps=aoc; androidId=; appType=app; appVersion=5.0.1; app_utm_source_from_app=iPhoneApp; avc=1.0; cartId=57bced40-14b5-46f7-ba3f-7f97a6528a83; cto_lwid=159cabef-3f27-4544-a721-3c6e1ae6de3e; deApp=true; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceid=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; eid=\"VjUwIzUzZTk3NmJlLTExMmQtNDEwMy05ZmU4LTFkMzZiMGM0ZWE5Yw@snpde.in\"; hide_header_msite=false; instanceId=; ios_app_version=true; loginSuccessHome=mloginSuccess; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; omniInit=true; platform=ios; platformType=IOSAPP; s_pers=%20s_vi%3D07F7F8C5A36146DF-1CC4085EF87B8B0E%7C1688368631626%3B%20gpv_pn%3Dwap%253AhomePage%253Anew%7C1530604034112%3B%20s_nr7%3D1530602234115-New%7C1531207034115%3B%20s_nr30%3D1530602234117-New%7C1533194234117%3B%20s_nr90%3D1530602234119-New%7C1540970234119%3B%20s_nr365%3D1530602234121-New%7C1562138234121%3B%20s_nr36500%3D1530602234123-New%7C4684202234123%3B; sd.zone=Z26; sdrmc=\"VmpVd0l6VXpaVGszTm1KbExURXhNbVF0TkRFd015MDVabVU0TFRGa016WmlNR00wWldFNVl3QHNucGRlLmluOjE1OTI4MTAyNjk4MTU6U0Q6SlBGSkpSRTRCbDZ3ZTJkcTdBc3dLeHFnY1BKZGZmQ09TUzhDSTh4VXdTeEJhdk9wZnlPY2dOZkNhZTVZcmhCNWFOT0FNcXF2MTNKZkNmWVI2VHJNeWVSdjJYYlhBcHg0V2ZGNGFyM1ZsZ0hhRE5MMUt4N0hzRGNOczRGS2VhYjQ6ZjFjNjhiYzkwNDA3MmE0OTA1Y2Y0ODBkMjhkNDI5OTU6Y2EwNmZhMDgyMTJmYzRkMmQ0M2QwOTc0YzA1OWZmNjE=\"; siteId=105; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153059930091494865; visitorId=07F7F8C5A36146DF-1CC4085EF87B8B0E; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; wap_mCampaignOffer=womensfashion-eoss_WAP_campaignID_HeroTemplate_4H_2_sarees_4h__Dress%20Materials_Upto%2080%25%20off_1529575860000_1593455400000; xc=\"bnVsbA==\"; xg=\"bnVsbHx8MTUzMDYwNDA2OTk2OQ==\""
+					},
+					{
+						"key": "Login-Token",
+						"value": "SD:Vzg3Y7c_liGZYGiBRgVWoxo9W_qF-UDkgVv0d3sqnvRBavOpfyOcgNfCae5YrhB5aNOAMqqv13JfCfYR6TrMyWSdgZAMEdWxmGY-krAdjW5jJrpfUEDSxyyteQKhXobH"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "154",
+						"disabled": true
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pogIds\": [\"684758524171\", \"654131425823\", \"642057816655\"],\r\n\t\"collectionName\": \"Snapdeal\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/wishlist/addProduct",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"wishlist",
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/wishlist/deleteProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYwNDM1NjQ5MQ=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=zh4pcbe11re58; CartQty=0; _col_uuid=29adba40-204c-4c57-84a6-4e045d743bd5-6mes~1; _sdDPPageId=1530602233893_1008_153059930091494865; _sdRefEvtCookie=%7B%22refEvt%22%3A%22%22%2C%22refEvtId%22%3A%22%22%7D; _sdRefPgCookie=%7B%22refPg%22%3A%22home%22%2C%22refPgId%22%3A%221530602233893_1008_153059930091494865%22%7D; _sdpe=; advId=B13F8B84-693F-478A-A93A-8F646156E06F; alps=aoc; androidId=; appType=app; appVersion=5.0.1; app_utm_source_from_app=iPhoneApp; avc=1.0; cartId=57bced40-14b5-46f7-ba3f-7f97a6528a83; cto_lwid=159cabef-3f27-4544-a721-3c6e1ae6de3e; deApp=true; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceid=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; eid=\"VjUwIzUzZTk3NmJlLTExMmQtNDEwMy05ZmU4LTFkMzZiMGM0ZWE5Yw@snpde.in\"; hide_header_msite=false; instanceId=; ios_app_version=true; loginSuccessHome=mloginSuccess; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; omniInit=true; platform=ios; platformType=IOSAPP; s_pers=%20s_vi%3D07F7F8C5A36146DF-1CC4085EF87B8B0E%7C1688368631626%3B%20gpv_pn%3Dwap%253AhomePage%253Anew%7C1530604034112%3B%20s_nr7%3D1530602234115-New%7C1531207034115%3B%20s_nr30%3D1530602234117-New%7C1533194234117%3B%20s_nr90%3D1530602234119-New%7C1540970234119%3B%20s_nr365%3D1530602234121-New%7C1562138234121%3B%20s_nr36500%3D1530602234123-New%7C4684202234123%3B; sd.zone=Z26; sdrmc=\"VmpVd0l6VXpaVGszTm1KbExURXhNbVF0TkRFd015MDVabVU0TFRGa016WmlNR00wWldFNVl3QHNucGRlLmluOjE1OTI4MTAyNjk4MTU6U0Q6SlBGSkpSRTRCbDZ3ZTJkcTdBc3dLeHFnY1BKZGZmQ09TUzhDSTh4VXdTeEJhdk9wZnlPY2dOZkNhZTVZcmhCNWFOT0FNcXF2MTNKZkNmWVI2VHJNeWVSdjJYYlhBcHg0V2ZGNGFyM1ZsZ0hhRE5MMUt4N0hzRGNOczRGS2VhYjQ6ZjFjNjhiYzkwNDA3MmE0OTA1Y2Y0ODBkMjhkNDI5OTU6Y2EwNmZhMDgyMTJmYzRkMmQ0M2QwOTc0YzA1OWZmNjE=\"; siteId=105; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153059930091494865; visitorId=07F7F8C5A36146DF-1CC4085EF87B8B0E; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; wap_mCampaignOffer=womensfashion-eoss_WAP_campaignID_HeroTemplate_4H_2_sarees_4h__Dress%20Materials_Upto%2080%25%20off_1529575860000_1593455400000; xc=\"bnVsbA==\"; xg=\"bnVsbHx8MTUzMDYwNDA2OTk2OQ==\""
+					},
+					{
+						"key": "Login-Token",
+						"value": "SD:Vzg3Y7c_liGZYGiBRgVWoxo9W_qF-UDkgVv0d3sqnvRBavOpfyOcgNfCae5YrhB5aNOAMqqv13JfCfYR6TrMyWSdgZAMEdWxmGY-krAdjW5jJrpfUEDSxyyteQKhXobH"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "124",
+						"disabled": true
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pogIds\": [\"628129143297\"],\r\n\t\"collectionName\": \"Snapdeal\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/wishlist/deleteProduct",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"wishlist",
+						"deleteProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/user/isMobileAccountExists",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=x6i6hrg2pe0e5n"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwOTc4MjYwMg=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"mobileNumber\": \"9654421103\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/user/isMobileAccountExists",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"isMobileAccountExists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=x6i6hrg2pe0e5n"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwOTc4MjYwMg=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"status\": \"SUCCESS\",\r\n\t\"successful\": true,\r\n\t\"validationErrors\": [],\r\n\t\"data\": {\r\n\t\t\"otpId\": \"SD:VjUwIzcyMTI1NmZkLWVkNjktNGJkZi05ZDgwLTE1ZGE1NDE0MDM3ZiNfMDdfMjAxOA\",\r\n\t\t\"otpMessage\": \"Please enter verification code sent to 9654421103\",\r\n\t\t\"callMeFeatureEnableTimeout\": 30,\r\n\t\t\"callMeEnabled\": false\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"otp",
+						"v1",
+						"sendMobileLoginOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/user/getUserInformation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwOTc4MjYwMg=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=x6i6hrg2pe0e5n"
+					},
+					{
+						"key": "Login-Token",
+						"value": "SD:Vzg3Y7c_liGZYGiBRgVWo7OyS3mW-n_r7ppnCmXjOv0tVLuUz7Zb8ZZ9gZt4Knp9tGrxg36fLW55-bMj4qYxfCfQOsgQOLf1MOtYMj1g_62SxtrfrdMAVvWr-WN1zCBn"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "90"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/user/getUserInformation",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"getUserInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/user/linkEmailToMobileOnlyAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYxMTA4MjU3Mg=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=x6i6hrg2pe0e5n"
+					},
+					{
+						"key": "Login-Token",
+						"value": "SD:Vzg3Y7c_liGZYGiBRgVWo7OyS3mW-n_r7ppnCmXjOv0tVLuUz7Zb8ZZ9gZt4Knp9tGrxg36fLW55-bMj4qYxfCfQOsgQOLf1MOtYMj1g_62SxtrfrdMAVvWr-WN1zCBn"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "140",
+						"disabled": true
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"emailId\": \"shivam.gandhi.in@snapdeal.com\",\r\n\t\"mobileNumber\": \"9654421103\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/user/linkEmailToMobileOnlyAccount",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"linkEmailToMobileOnlyAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileapi.snapdeal.com/service/user/otp/v1/resendOTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYxMTA4MjU3Mg=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=z5jenqg5lorb77"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.21"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "197",
+						"disabled": true
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "email",
+						"value": "shivam.gandhi.in@snapdeal.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"otpId\": \"SD:VjUwI2Y5YWI1YTYxLWM3ZDYtNDgxYy05ZWU1LWEyYzFiNzlkNmZmYSNfMDdfMjAxOA\",\r\n\t\"otpChannel\": \"THROUGH_SMS\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/user/otp/v1/resendOTP",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"otp",
+						"v1",
+						"resendOTP"
 					]
 				}
 			},

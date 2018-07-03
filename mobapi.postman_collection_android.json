@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Checked",
+			"name": "Android",
 			"description": "",
 			"item": [
 				{
@@ -4773,6 +4773,1748 @@
 								"address",
 								"v1",
 								"getAddressList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.16"
+							},
+							{
+								"key": "Cookie",
+								"value": "SCOUTER=x1vj8fa2rspnb"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "os",
+								"value": "ios"
+							},
+							{
+								"key": "key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-IN;q=1"
+							},
+							{
+								"key": "deviceID",
+								"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDUxODU0MDI0Nw=="
+							},
+							{
+								"key": "User-Agent",
+								"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+							},
+							{
+								"key": "visitor_id",
+								"value": "2D9CEB1F852A2D2A-600001036030EADF"
+							},
+							{
+								"key": "os_version",
+								"value": "9.3.4"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "v",
+								"value": "5.0.1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"category\": \"women-ethnicwear\",\r\n\t\"pageName\": \"csfView\",\r\n\t\"whatsHotWCategoryXPath\": \"\",\r\n\t\"version\": \"v2\",\r\n\t\"mobile\": \"\",\r\n\t\"selectedForYouWCategoryXPath\": \"\",\r\n\t\"deviceId\": \"B13F8B84-693F-478A-A93A-8F646156E06F\",\r\n\t\"recommendedWCategoryXPath\": \"\",\r\n\t\"pincode\": \"\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"rawUrl\": \"\",\r\n\t\"bucketId\": \"4866\",\r\n\t\"emailId\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"personalization",
+								"v3",
+								"getWidgetStructure"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.26"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "118",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"mobileNumber\": \"9958571972\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"otp",
+								"v1",
+								"sendMobileLoginOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/updateCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDU5OTc0NDY3OQ=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "261",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW\",\r\n\t\"items\": [{\r\n\t\t\"catalogId\": 648763129960,\r\n\t\t\"supc\": \"SDL882835290\",\r\n\t\t\"vendorCode\": \"S25c97\",\r\n\t\t\"quantity\": 2\r\n\t}],\r\n\t\"pincode\": \"122022\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/updateCart",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"nativeCart",
+								"v2",
+								"updateCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/removeItemFromCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDU5OTc0NDY3OQ=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "286",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW\",\r\n\t\"itemsTORemove\": [{\r\n\t\t\"catalogId\": 648763129960,\r\n\t\t\"supc\": \"SDL882835290\",\r\n\t\t\"vendorCode\": \"S25c97\",\r\n\t\t\"parentSupc\": \"\",\r\n\t\t\"heroItem\": false,\r\n\t\t\"bundleType\": \"\"\r\n\t}]\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/removeItemFromCart",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"nativeCart",
+								"v2",
+								"removeItemFromCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com//service/wishlist/deleteProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMjc0MjU4Nw=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "129",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"collectionName\": \"\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pogIds\": [\"75246\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com//service/wishlist/deleteProduct",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"",
+								"service",
+								"wishlist",
+								"deleteProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com//service/wishlist/addProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwMjc0MjU4Nw=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "129",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"collectionName\": \"\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pogIds\": [\"71528\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com//service/wishlist/addProduct",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"",
+								"service",
+								"wishlist",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/signout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwNDU5OTM4MA=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "148",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/signout",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/login/v1/loginWithOTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwNDU5OTM4MA=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "183",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"otp\": \"1268\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"otpId\": \"SD:VjUwI2MxM2QwZGYwLTViMzItNDJmNC04NDk1LTA5OGM0YzVmYzkyNyNfMDdfMjAxOA\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/login/v1/loginWithOTP",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"login",
+								"v1",
+								"loginWithOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwNDU5OTM4MA=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "118",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"mobileNumber\": \"9958571972\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"otp",
+								"v1",
+								"sendMobileLoginOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com//service/nativeCart/v2/getCartitemCount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo21lMji90uNBqxUoTWwXQbmFuyDaRHMtn--PI0d_KIvLo1OoefUqgqVbLK0FM9SfZwZweMK_8P2zDNt5ZTizg2ay7DkE-vraphO-Z7LjhkeN"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwNDU5OTM4MA=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "167",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo21lMji90uNBqxUoTWwXQbmFuyDaRHMtn--PI0d_KIvLo1OoefUqgqVbLK0FM9SfZwZweMK_8P2zDNt5ZTizg2ay7DkE-vraphO-Z7LjhkeN\",\r\n\t\"pincode\": \"122022\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com//service/nativeCart/v2/getCartitemCount",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"",
+								"service",
+								"nativeCart",
+								"v2",
+								"getCartitemCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/isMobileAccountExists",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwNDU5OTM4MA=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "118",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"mobileNumber\": \"9958571972\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/isMobileAccountExists",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"isMobileAccountExists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/login/v2/loginWithEmail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYxMDYxMjY0Nw=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "148",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"password\": \"bhavyas3\",\r\n\t\"emailId\": \"kartiksehgal3@gmail.com\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/login/v2/loginWithEmail",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"login",
+								"v2",
+								"loginWithEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/isUserLoggedIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo21lMji90uNBqxUoTWwXQbmFuyDaRHMtn--PI0d_KIvLo1OoefUqgqVbLK0FM9SfZwZweMK_8P2zDNt5ZTizg2ay7DkE-vraphO-Z7LjhkeN"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "237",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo21lMji90uNBqxUoTWwXQbmFuyDaRHMtn--PI0d_KIvLo1OoefUqgqVbLK0FM9SfZwZweMK_8P2zDNt5ZTizg2ay7DkE-vraphO-Z7LjhkeN\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/isUserLoggedIn",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"isUserLoggedIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/v1/isEmailExists",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYxMDYxMjY0Nw=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "124",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"kartiksehgal3@gmail.com\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/v1/isEmailExists",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"v1",
+								"isEmailExists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/resetPassword/v1/validateOTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWozXQSTogMBvf9t84EHrRCHzQhQAz4ooibmCBBmr9J3VWPHQTcmx2Tfymjq1GAURdGwUfbAqwkMYDusOZbMsRw3e6uHkSE9M3fHKTNxfLvgDz"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYxMjY5NDEyMA=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "183",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"otp\": \"7586\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"otpId\": \"SD:VjUwIzEzNGY3ZDEyLWI3MTgtNGFiYS04ZGJiLWY5M2YyYWIwYWNhNCNfMDdfMjAxOA\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/resetPassword/v1/validateOTP",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"resetPassword",
+								"v1",
+								"validateOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/user/updateUserByToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWozXQSTogMBvf9t84EHrRCHzQhQAz4ooibmCBBmr9J3VWPHQTcmx2Tfymjq1GAURdGwUfbAqwkMYDusOZbMsRw3e6uHkSE9M3fHKTNxfLvgDz"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYxMjY5NDEyMA=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "783",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"firstName\": \"\",\r\n\t\"middleName\": \"\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"dob\": \"03-Aug-1996\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"lastName\": \"\",\r\n\t\"gender\": \"Male\",\r\n\t\"displayName\": \"Kartik Sehgal\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"categories\": [{\r\n\t\t\"categoryName\": \"Men's Fashion\",\r\n\t\t\"imageUrl\": \"https:\\/\\/n1.sdlcdn.com\\/imgs\\/d\\/j\\/h\\/NUX_imgs_mansgs-e8ee2.jpg\",\r\n\t\t\"subCatIds\": [17, 226, 1242, 1311, 477]\r\n\t}, {\r\n\t\t\"categoryName\": \"Books\",\r\n\t\t\"imageUrl\": \"https:\\/\\/i3.sdlcdn.com\\/img\\/storeFrontFeaturedProductAdmin\\/11\\/NUXimgsbookswr88583.jpg\",\r\n\t\t\"subCatIds\": [364]\r\n\t}, {\r\n\t\t\"categoryName\": \"Mobiles & Accessories\",\r\n\t\t\"imageUrl\": \"https:\\/\\/n1.sdlcdn.com\\/imgs\\/d\\/j\\/h\\/NUX_imgs_mobilesegre-a04b3.jpg\",\r\n\t\t\"subCatIds\": [175, 29, 1276]\r\n\t}, {\r\n\t\t\"categoryName\": \"Laptops\",\r\n\t\t\"imageUrl\": \"https:\\/\\/n1.sdlcdn.com\\/imgs\\/d\\/j\\/h\\/NUX_imgs_laptop-d999a.jpg\",\r\n\t\t\"subCatIds\": [57]\r\n\t}]\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/updateUserByToken",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"updateUserByToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/generic/get/getGenericOffer?landingPage=top-deals&start=0&count=49",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Origin",
+								"value": "https://m.snapdeal.com"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36 WapAppInfo:AndroidNew appVersion: 6.5.6"
+							},
+							{
+								"key": "Referer",
+								"value": "https://m.snapdeal.com/offers/top-deals?x=2&av=6.5.6&mRefPg=categoryListing&visitor_id=25B236A1C6334F07-281CC0266240A577&platformType=android&appType=android&channel=app&deviceId=290b4bc0d40591e&lan_ip=10.20.86.25&os_version=7.0&siteId=103&advId=63ab3299-f0a4-4568-95d8-c08e28424860&avc=150&androidId=290b4bc0d40591e&instanceId=e1b68f81-0267-43ee-b6c7-51a7d4d2acad&loggedInEmail=kartiksehgal3@gmail.com&new_utm_source=direct_6.5.6"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-IN,en-US;q=0.9"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "com.snapdeal.main"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/generic/get/getGenericOffer?landingPage=top-deals&start=0&count=49",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"generic",
+								"get",
+								"getGenericOffer"
+							],
+							"query": [
+								{
+									"key": "landingPage",
+									"value": "top-deals"
+								},
+								{
+									"key": "start",
+									"value": "0"
+								},
+								{
+									"key": "count",
+									"value": "49"
+								}
 							]
 						}
 					},
