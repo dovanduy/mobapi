@@ -4639,7 +4639,8 @@
 							},
 							{
 								"key": "Content-Length",
-								"value": "90"
+								"value": "90",
+								"disabled": true
 							},
 							{
 								"key": "Host",
@@ -6519,8 +6520,249 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/product/getVendorList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo57BK-3NCgsg3T0zVn8Q3YVv1spNReFyOy40RRKPBNM_ZMcJ1dZyGj0Ybim3TsOEfvttsr1L3sZCO03DgUDJrZ5k6luHD_UpP1SDlUUXh-Ta"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYxODgwNzg4MA=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "143",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"zone\": \"Z9\",\r\n\t\"supc\": \"SDL775914720\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pincode\": \"122022\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/product/getVendorList",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"product",
+								"getVendorList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/mergeCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo57BK-3NCgsg3T0zVn8Q3YVv1spNReFyOy40RRKPBNM_ZMcJ1dZyGj0Ybim3TsOEfvttsr1L3sZCO03DgUDJrZ5k6luHD_UpP1SDlUUXh-Ta"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYxNDQzMTcwOA=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "215",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"cartId\": \"49e23a65-8f5d-421b-a3bf-1c569f26f9b6\",\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo57BK-3NCgsg3T0zVn8Q3YVv1spNReFyOy40RRKPBNM_ZMcJ1dZyGj0Ybim3TsOEfvttsr1L3sZCO03DgUDJrZ5k6luHD_UpP1SDlUUXh-Ta\",\r\n\t\"pincode\": \"122022\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/mergeCart",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"nativeCart",
+								"v2",
+								"mergeCart"
+							]
+						}
+					},
+					"response": []
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3a0f0e0e-3220-47c9-a70a-674ea111eedb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7b35b040-f2c8-4370-a8a3-28443f286f19",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function(){",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
 		}
 	]
 }
