@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "https://mobileapi.snapdeal.com/service/referralv2/getReferralCount",
+			"name": "Referral - getReferralCount",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -109,7 +109,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/mobapi/getUserCoupons",
+			"name": "Account - getUserCoupons",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -213,7 +213,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/wishlist/getWishlistForUser",
+			"name": "WishList - getWishlistForUser",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -308,7 +308,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/isUserLoggedIn",
+			"name": "Login - isUserLoggedIn",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -402,7 +402,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/getUserInformation",
+			"name": "Login - getUserInformation",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -506,7 +506,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/getUserInformation",
+			"name": "Login - getUserInformation",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -610,7 +610,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/referralv2/getReferralCount",
+			"name": "Referral - getReferralCount",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -714,7 +714,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/referralv2/getReferralCount",
+			"name": "Referral - getReferralCount",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -818,7 +818,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/order/recentUpdatedOrders",
+			"name": "Orders - recentUpdatedOrders",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -922,7 +922,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/insertItemToCart",
+			"name": "Native - insertItemToCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1018,7 +1018,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v2/get/getWidgetsData?widgetType=tm&pg=hp&wt=tm&aid=29&appType=APP&appVersion=5.0.1&deviceId=B13F8B84-693F-478A-A93A-8F646156E06F&appPlatform=ios&jid=43&ruleId=44&limit=20&sp=4,5,8,14,21,27&aid=43&cs=4&ts=37&testId=A",
+			"name": "Home - getWidgetsData",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -1178,7 +1178,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/getZone",
+			"name": "Home - getZone",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1268,7 +1268,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/filters/getDynamicFilters?apiKey=snapdeal&categoryId=0&categoryXPath=women-apparel-dress-material&filterQuery=Price%3A267%2C899%7ChpsaScore_tf1%3A1%7C&keyword=&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&vertical=product&zone=Z17",
+			"name": "PLP - getDynamicFilters",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -1399,7 +1399,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/product/getProductDetails?apiKey=snapdeal&pincode=&productId=677836624803&requestProtocol=PROTOCOL_JSON&requestSource=NORMAL&responseProtocol=PROTOCOL_JSON&zone=Z17",
+			"name": "PLP - getProductDetails",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -1522,7 +1522,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/search/v2/checkSearchRedirection?allowGetaway=false&apiKey=snapdeal&binSearch=false&categoryId=0&categoryXPath=women-apparel-dress-material&cityUrl=&clickSrc=&emailId=&fetchGuides=1&keyword=&latitude=&longitude=&noOfResultsPerBin=12&number=12&onDemand=1&pageType=slp&pincode=&publisherId=1&q=Price%3A267%2C899%7ChpsaScore_tf1%3A1%7C&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&response_type=search_ad&sdId=&serveAds=false&siteId=105&slotId=sd-cr-search-1-12&slotName=&sortBy=plrty&spellCheck=true&start=0&vertical=product&zone=Z17",
+			"name": "Search - checkSearchRedirection",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -1738,7 +1738,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/search/v2/checkSearchRedirection?allowGetaway=false&apiKey=snapdeal&binSearch=false&categoryId=0&categoryXPath=women-apparel-dress-material&cityUrl=&clickSrc=&emailId=&fetchGuides=1&keyword=&latitude=&longitude=&noOfResultsPerBin=12&number=12&onDemand=1&pageType=slp&pincode=&publisherId=1&q=Price%3A267%2C899%7ChpsaScore_tf1%3A1%7C&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&response_type=search_ad&sdId=&serveAds=false&siteId=105&slotId=sd-cr-search-1-12&slotName=&sortBy=plrty&spellCheck=true&start=0&vertical=product&zone=Z17",
+			"name": "Search - checkSearchRedirection",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -1954,7 +1954,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/search/v2/getSearchResults?q=Brand:Lekue&pincode=null&sortBy=plrty&categoryXPath=home-kitchen&keyword=&start=0&number=5",
+			"name": "Search - getSearchResults",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -2078,7 +2078,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/widget/getBanners?apiKey=snapdeal&noOfBanners=300&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&start=0",
+			"name": "Home - getBanners",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -2193,7 +2193,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v2/getBannerWidgetData?bannerType=platinum&widgetType=APP_HOMEPAGE_CAROUSAL_PLATINUM_BANNER&widgetSequence=0",
+			"name": "Home - getBannerWidgetData",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -2300,7 +2300,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/pdp/getInfiniteFeed?limit=15&pg=pp&sp=18,23&cs=18&ts=23&ruleId=356&jid=45&testId=A&deviceId=B13F8B84-693F-478A-A93A-8F646156E06F&appVersion=5.0.1&appType=APP&appPlatform=ios&pid=620665329699&totalPogCount=0&adsPogCount=0&brandPogCount=0&pricePogCount=0&pogListCode=0&followUpId=tm&price=2496&brand=Timex&categoryXPath=watches-men",
+			"name": "PDP - getInfiniteFeed",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -2483,7 +2483,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/pdp/getInfiniteFeed?limit=15&cs=18&sp=18,23&pg=pp&jid=45&testId=A&ts=23&ruleId=356&deviceId=B13F8B84-693F-478A-A93A-8F646156E06F&appType=APP&appVersion=5.0.1&appPlatform=ios&pid=677836624803&totalPogCount=0&adsPogCount=0&brandPogCount=0&pricePogCount=0&pogListCode=0&followUpId=tm&price=1395&brand=Nike&categoryXPath=mens-footwear-slippers-floaters",
+			"name": "PDP - getInfiniteFeed",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -2666,7 +2666,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2762,7 +2762,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2858,7 +2858,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2954,7 +2954,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3050,7 +3050,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3146,7 +3146,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3242,7 +3242,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3338,7 +3338,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3434,7 +3434,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3535,7 +3535,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3636,7 +3636,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3737,7 +3737,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3834,7 +3834,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/v3/getWidgetStructure",
+			"name": "Home - getWidgetStructure",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -3930,7 +3930,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/getCart",
+			"name": "NativeCart - getCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -4026,7 +4026,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/updateCart",
+			"name": "NativeCart - updateCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -4122,7 +4122,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/removeItemFromCart",
+			"name": "NativeCart - removeItemFromCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -4218,7 +4218,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/product/verifyPinCode?apiKey=snapdeal&checkExchangeServiceable=0&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234&zone=Z26",
+			"name": "PDP - verifyPinCode",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -4341,7 +4341,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/bundle/getBundleProducts?apiKey=snapdeal&bundleIndex=1&bundleType=ALL&bundlingVersion=V2&pageNumber=0&pageSize=10&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234",
+			"name": "PDP - getBundleProducts",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -4476,7 +4476,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/bundle/getBundleProducts?apiKey=snapdeal&bundleIndex=1&bundleType=ALL&bundlingVersion=V2&pageNumber=0&pageSize=10&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234",
+			"name": "PDP - getBundleProducts",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -4611,7 +4611,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/product/getRefreshProductDetails?apiKey=snapdeal&pincode=110045&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON&supc=SDL139991234&zone=Z26",
+			"name": "PDP - getRefreshProductDetails",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -4730,7 +4730,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/personalization/getRecentSearches?apiKey=snapdeal&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON",
+			"name": "Search - getRecentSearches",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -4836,7 +4836,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/mobapi/getUserCoupons",
+			"name": "Account - getUserCoupons",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -4940,7 +4940,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/wishlist/addProduct",
+			"name": "NativeCart - addProduct",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5044,7 +5044,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/wishlist/deleteProduct",
+			"name": "NativeCart - deleteProduct",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5148,7 +5148,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/isMobileAccountExists",
+			"name": "Login - isMobileAccountExists",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5243,7 +5243,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
+			"name": "Login - sendMobileLoginOTP",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5340,7 +5340,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/getUserInformation",
+			"name": "Login - getUserInformation",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5443,7 +5443,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/linkEmailToMobileOnlyAccount",
+			"name": "Login - linkEmailToMobileOnlyAccount",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5547,7 +5547,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/user/otp/v1/resendOTP",
+			"name": "Login - resendOTP",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5653,7 +5653,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/nativeCart/v2/mergeCart",
+			"name": "NativeCart - mergeCart",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5758,7 +5758,7 @@
 			"response": []
 		},
 		{
-			"name": "https://mobileapi.snapdeal.com/service/get/feature/getApiFeatureMap?apiKey=snapdeal&platform=ios&requestProtocol=PROTOCOL_JSON&responseProtocol=PROTOCOL_JSON",
+			"name": "Home - getApiFeatureMap",
 			"request": {
 				"method": "GET",
 				"header": [
