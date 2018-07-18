@@ -11,6 +11,18 @@
 			"item": [
 				{
 					"name": "Home - appConfigData",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "79cd132b-8bbc-4c56-a526-23b40070fcc8",
+								"type": "text/javascript",
+								"exec": [
+									"postman.setNextRequest(\"Login - loginWithEmail\");"
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [
@@ -125,15 +137,132 @@
 					"response": []
 				},
 				{
+					"name": "Login - loginWithEmail",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c02f29bd-a692-43f9-be14-4f4a92bdf72c",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setGlobalVariable(\"token\", postman.getResponseHeader(\"Login-Token\"));",
+									"",
+									"postman.setNextRequest(\"Home - getWidgetsData\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYxMDYxMjY0Nw=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "148",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"password\": \"bhavyas3\",\r\n\t\"emailId\": \"kartiksehgal3@gmail.com\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/user/login/v2/loginWithEmail",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"user",
+								"login",
+								"v2",
+								"loginWithEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Home - getWidgetsData",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "f9790be1-74df-4e8a-83ea-b45c6b401b39",
+								"id": "727abbbc-bfe2-48ef-9c6f-b411642c3eba",
 								"type": "text/javascript",
 								"exec": [
-									"pm.test(\"response code is 200\", function (){",
+									"/*pm.test(\"response code is 200\", function (){",
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
@@ -145,7 +274,8 @@
 									"    var jsonData = pm.response.json();",
 									"    var len = jsonData.products.length;",
 									"    pm.expect(len).to.be.above(0);",
-									"});"
+									"});",
+									"*/"
 								]
 							}
 						}
@@ -1222,7 +1352,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -1408,6 +1538,18 @@
 				},
 				{
 					"name": "Home - getUserCoupons",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "aa43a3bb-c25d-4808-ae95-ee0dfa486def",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1429,7 +1571,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -1504,6 +1646,18 @@
 				},
 				{
 					"name": "Wishlist - getListDataForUser",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "52c7e24a-f79e-4632-8420-060ec2471604",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1525,7 +1679,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo9hOZhW7lopASNzA1sE6zk58lMMnaK3mevWzzA4Fs0KT0ACxNWGwwRAU9ea5Ff5ihUkjnjgWFFHAG1ko_-GqNv7Ur4PpJe4KnR6fAlL_2pUC"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -1613,6 +1767,18 @@
 				},
 				{
 					"name": "Wishlist - addProduct",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ea426cbf-2c35-46d4-b030-142c19407edd",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1634,7 +1800,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -1722,6 +1888,18 @@
 				},
 				{
 					"name": "Wishlist - getWishlistForUser",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fea6f3ed-a8ef-4cb4-82a3-223e5340d7e9",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1743,7 +1921,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo9hOZhW7lopASNzA1sE6zk58lMMnaK3mevWzzA4Fs0KT0ACxNWGwwRAU9ea5Ff5ihUkjnjgWFFHAG1ko_-GqNv7Ur4PpJe4KnR6fAlL_2pUC"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -1832,6 +2010,18 @@
 				},
 				{
 					"name": "Wishlist - deleteProduct",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b2d18c49-3394-4adf-9356-75cc3d4ed57d",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1853,7 +2043,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -3713,6 +3903,18 @@
 				},
 				{
 					"name": "Cart - getCart",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b0ea03ca-46f4-4771-a7ab-8c1f29a9a561",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3734,7 +3936,8 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo2i94p-FhKcVBYdA2Dfhjs7vqNcr9voknNR0SDH-5Xy73haPzm7gvLqtH-BZP64UDG8mjkA-UU7dua6eCR4hrECdCfxviAoNhOAt9bPB9jq-",
+								"disabled": true
 							},
 							{
 								"key": "visitor_id",
@@ -3800,7 +4003,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW\",\r\n\t\"pincode\": \"122022\"\r\n}"
+							"raw": "{\r\n\t\"loginToken\": \"{{token}}\",\r\n\t\"pincode\": \"122022\"\r\n}"
 						},
 						"url": {
 							"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/getCart",
@@ -3822,6 +4025,18 @@
 				},
 				{
 					"name": "Cart - updateCart",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8eb69bb3-6396-42ad-8312-c62a64cf35d2",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3843,7 +4058,8 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "{{token}}",
+								"disabled": true
 							},
 							{
 								"key": "visitor_id",
@@ -3909,7 +4125,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW\",\r\n\t\"items\": [{\r\n\t\t\"catalogId\": 648763129960,\r\n\t\t\"supc\": \"SDL882835290\",\r\n\t\t\"vendorCode\": \"S25c97\",\r\n\t\t\"quantity\": 2\r\n\t}],\r\n\t\"pincode\": \"122022\"\r\n}"
+							"raw": "{\r\n\t\"loginToken\": \"{{token}}\",\r\n\t\"items\": [{\r\n\t\t\"catalogId\": 648763129960,\r\n\t\t\"supc\": \"SDL882835290\",\r\n\t\t\"vendorCode\": \"S25c97\",\r\n\t\t\"quantity\": 2\r\n\t}],\r\n\t\"pincode\": \"122022\"\r\n}"
 						},
 						"url": {
 							"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/updateCart",
@@ -3931,6 +4147,18 @@
 				},
 				{
 					"name": "Cart - mergeCart",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b887c845-e243-4c78-9321-2ff60180e0ca",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3952,7 +4180,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo57BK-3NCgsg3T0zVn8Q3YVv1spNReFyOy40RRKPBNM_ZMcJ1dZyGj0Ybim3TsOEfvttsr1L3sZCO03DgUDJrZ5k6luHD_UpP1SDlUUXh-Ta"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -4040,6 +4268,18 @@
 				},
 				{
 					"name": "Cart - removeItemFromCart",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d779a615-342b-4376-974c-96a39876c001",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -4061,7 +4301,7 @@
 							},
 							{
 								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW"
+								"value": "{{token}}"
 							},
 							{
 								"key": "visitor_id",
@@ -4127,7 +4367,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo_AXDmw_KfpxdiDrCdGHsrf4WXFaweewHI61KE-aZSfI2wHT3TmfN_dNXfH7HGVuy8Te973I0LvZFXJKJrLdxvvOGeceFS1n3DxEPDbndCnW\",\r\n\t\"itemsTORemove\": [{\r\n\t\t\"catalogId\": 648763129960,\r\n\t\t\"supc\": \"SDL882835290\",\r\n\t\t\"vendorCode\": \"S25c97\",\r\n\t\t\"parentSupc\": \"\",\r\n\t\t\"heroItem\": false,\r\n\t\t\"bundleType\": \"\"\r\n\t}]\r\n}"
+							"raw": "{\r\n\t\"loginToken\": \"{{token}}\",\r\n\t\"itemsTORemove\": [{\r\n\t\t\"catalogId\": 648763129960,\r\n\t\t\"supc\": \"SDL882835290\",\r\n\t\t\"vendorCode\": \"S25c97\",\r\n\t\t\"parentSupc\": \"\",\r\n\t\t\"heroItem\": false,\r\n\t\t\"bundleType\": \"\"\r\n\t}]\r\n}"
 						},
 						"url": {
 							"raw": "https://mobileapi.snapdeal.com/service/nativeCart/v2/removeItemFromCart",
@@ -4565,114 +4805,6 @@
 					"response": []
 				},
 				{
-					"name": "Login - isUserLoggedIn",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "v",
-								"value": "6.5.6"
-							},
-							{
-								"key": "deviceId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "androidId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "networkType",
-								"value": "wifi"
-							},
-							{
-								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo9hOZhW7lopASNzA1sE6zk58lMMnaK3mevWzzA4Fs0KT0ACxNWGwwRAU9ea5Ff5ihUkjnjgWFFHAG1ko_-GqNv7Ur4PpJe4KnR6fAlL_2pUC"
-							},
-							{
-								"key": "visitor_id",
-								"value": "25B236A1C6334F07-281CC0266240A577"
-							},
-							{
-								"key": "lan_ip",
-								"value": "10.20.86.25"
-							},
-							{
-								"key": "api_key",
-								"value": "snapdeal"
-							},
-							{
-								"key": "instanceId",
-								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
-							},
-							{
-								"key": "os_version",
-								"value": "7.0"
-							},
-							{
-								"key": "User-Agent",
-								"value": "Xiaomi Redmi Note 4"
-							},
-							{
-								"key": "os",
-								"value": "android"
-							},
-							{
-								"key": "Accept-Encoding",
-								"value": "gzip"
-							},
-							{
-								"key": "xc",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
-							},
-							{
-								"key": "xg",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDI3MDAzMzI3OA=="
-							},
-							{
-								"key": "email",
-								"value": "kartiksehgal3@gmail.com"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json; charset=utf-8"
-							},
-							{
-								"key": "Content-Length",
-								"value": "237",
-								"disabled": true
-							},
-							{
-								"key": "Host",
-								"value": "mobileapi.snapdeal.com"
-							},
-							{
-								"key": "Connection",
-								"value": "Keep-Alive"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo9hOZhW7lopASNzA1sE6zk58lMMnaK3mevWzzA4Fs0KT0ACxNWGwwRAU9ea5Ff5ihUkjnjgWFFHAG1ko_-GqNv7Ur4PpJe4KnR6fAlL_2pUC\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
-						},
-						"url": {
-							"raw": "https://mobileapi.snapdeal.com/service/isUserLoggedIn",
-							"protocol": "https",
-							"host": [
-								"mobileapi",
-								"snapdeal",
-								"com"
-							],
-							"path": [
-								"service",
-								"isUserLoggedIn"
-							]
-						},
-						"description": "is user logged in"
-					},
-					"response": []
-				},
-				{
 					"name": "Login - sendMobileLoginOTP",
 					"request": {
 						"method": "POST",
@@ -4980,108 +5112,6 @@
 					"response": []
 				},
 				{
-					"name": "Login - sendMobileLoginOTP",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "v",
-								"value": "6.5.6"
-							},
-							{
-								"key": "deviceId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "androidId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "networkType",
-								"value": "wifi"
-							},
-							{
-								"key": "visitor_id",
-								"value": "25B236A1C6334F07-281CC0266240A577"
-							},
-							{
-								"key": "lan_ip",
-								"value": "10.20.86.25"
-							},
-							{
-								"key": "api_key",
-								"value": "snapdeal"
-							},
-							{
-								"key": "instanceId",
-								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
-							},
-							{
-								"key": "os_version",
-								"value": "7.0"
-							},
-							{
-								"key": "User-Agent",
-								"value": "Xiaomi Redmi Note 4"
-							},
-							{
-								"key": "os",
-								"value": "android"
-							},
-							{
-								"key": "Accept-Encoding",
-								"value": "gzip"
-							},
-							{
-								"key": "xc",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
-							},
-							{
-								"key": "xg",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDYwNDU5OTM4MA=="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json; charset=utf-8"
-							},
-							{
-								"key": "Content-Length",
-								"value": "118",
-								"disabled": true
-							},
-							{
-								"key": "Host",
-								"value": "mobileapi.snapdeal.com"
-							},
-							{
-								"key": "Connection",
-								"value": "Keep-Alive"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"mobileNumber\": \"9958571972\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
-						},
-						"url": {
-							"raw": "https://mobileapi.snapdeal.com/service/user/otp/v1/sendMobileLoginOTP",
-							"protocol": "https",
-							"host": [
-								"mobileapi",
-								"snapdeal",
-								"com"
-							],
-							"path": [
-								"service",
-								"user",
-								"otp",
-								"v1",
-								"sendMobileLoginOTP"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Login - isMobileAccountExists",
 					"request": {
 						"method": "POST",
@@ -5176,203 +5206,6 @@
 								"service",
 								"user",
 								"isMobileAccountExists"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Login - loginWithEmail",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "v",
-								"value": "6.5.6"
-							},
-							{
-								"key": "deviceId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "androidId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "networkType",
-								"value": "wifi"
-							},
-							{
-								"key": "visitor_id",
-								"value": "25B236A1C6334F07-281CC0266240A577"
-							},
-							{
-								"key": "lan_ip",
-								"value": "10.20.86.25"
-							},
-							{
-								"key": "api_key",
-								"value": "snapdeal"
-							},
-							{
-								"key": "instanceId",
-								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
-							},
-							{
-								"key": "os_version",
-								"value": "7.0"
-							},
-							{
-								"key": "User-Agent",
-								"value": "Xiaomi Redmi Note 4"
-							},
-							{
-								"key": "os",
-								"value": "android"
-							},
-							{
-								"key": "Accept-Encoding",
-								"value": "gzip"
-							},
-							{
-								"key": "xc",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
-							},
-							{
-								"key": "xg",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMDYxMDYxMjY0Nw=="
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json; charset=utf-8"
-							},
-							{
-								"key": "Content-Length",
-								"value": "148",
-								"disabled": true
-							},
-							{
-								"key": "Host",
-								"value": "mobileapi.snapdeal.com"
-							},
-							{
-								"key": "Connection",
-								"value": "Keep-Alive"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"password\": \"bhavyas3\",\r\n\t\"emailId\": \"kartiksehgal3@gmail.com\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\"\r\n}"
-						},
-						"url": {
-							"raw": "https://mobileapi.snapdeal.com/service/user/login/v2/loginWithEmail",
-							"protocol": "https",
-							"host": [
-								"mobileapi",
-								"snapdeal",
-								"com"
-							],
-							"path": [
-								"service",
-								"user",
-								"login",
-								"v2",
-								"loginWithEmail"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Login - isUserLoggedIn",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "v",
-								"value": "6.5.6"
-							},
-							{
-								"key": "androidId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "deviceId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "networkType",
-								"value": "wifi"
-							},
-							{
-								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo21lMji90uNBqxUoTWwXQbmFuyDaRHMtn--PI0d_KIvLo1OoefUqgqVbLK0FM9SfZwZweMK_8P2zDNt5ZTizg2ay7DkE-vraphO-Z7LjhkeN"
-							},
-							{
-								"key": "visitor_id",
-								"value": "25B236A1C6334F07-281CC0266240A577"
-							},
-							{
-								"key": "lan_ip",
-								"value": "10.20.86.25"
-							},
-							{
-								"key": "os_version",
-								"value": "7.0"
-							},
-							{
-								"key": "instanceId",
-								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
-							},
-							{
-								"key": "api_key",
-								"value": "snapdeal"
-							},
-							{
-								"key": "User-Agent",
-								"value": "Xiaomi Redmi Note 4"
-							},
-							{
-								"key": "os",
-								"value": "android"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json; charset=UTF-8"
-							},
-							{
-								"key": "Content-Length",
-								"value": "237",
-								"disabled": true
-							},
-							{
-								"key": "Host",
-								"value": "mobileapi.snapdeal.com"
-							},
-							{
-								"key": "Connection",
-								"value": "Keep-Alive"
-							},
-							{
-								"key": "Accept-Encoding",
-								"value": "gzip"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"apiKey\": \"snapdeal\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"loginToken\": \"SD:Vzg3Y7c_liGZYGiBRgVWo21lMji90uNBqxUoTWwXQbmFuyDaRHMtn--PI0d_KIvLo1OoefUqgqVbLK0FM9SfZwZweMK_8P2zDNt5ZTizg2ay7DkE-vraphO-Z7LjhkeN\"\r\n}"
-						},
-						"url": {
-							"raw": "https://mobileapi.snapdeal.com/service/isUserLoggedIn",
-							"protocol": "https",
-							"host": [
-								"mobileapi",
-								"snapdeal",
-								"com"
-							],
-							"path": [
-								"service",
-								"isUserLoggedIn"
 							]
 						}
 					},
@@ -6080,115 +5913,6 @@
 					"response": []
 				},
 				{
-					"name": "My Orders - recentUpdatedOrders",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "v",
-								"value": "6.5.6"
-							},
-							{
-								"key": "deviceId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "androidId",
-								"value": "290b4bc0d40591e"
-							},
-							{
-								"key": "networkType",
-								"value": "wifi"
-							},
-							{
-								"key": "Login-Token",
-								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo9hOZhW7lopASNzA1sE6zk58lMMnaK3mevWzzA4Fs0KT0ACxNWGwwRAU9ea5Ff5ihUkjnjgWFFHAG1ko_-GqNv7Ur4PpJe4KnR6fAlL_2pUC"
-							},
-							{
-								"key": "visitor_id",
-								"value": "25B236A1C6334F07-281CC0266240A577"
-							},
-							{
-								"key": "lan_ip",
-								"value": "10.20.86.25"
-							},
-							{
-								"key": "api_key",
-								"value": "snapdeal"
-							},
-							{
-								"key": "instanceId",
-								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
-							},
-							{
-								"key": "os_version",
-								"value": "7.0"
-							},
-							{
-								"key": "User-Agent",
-								"value": "Xiaomi Redmi Note 4"
-							},
-							{
-								"key": "os",
-								"value": "android"
-							},
-							{
-								"key": "Accept-Encoding",
-								"value": "gzip"
-							},
-							{
-								"key": "xc",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
-							},
-							{
-								"key": "xg",
-								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDI3MDAzMzI3OA=="
-							},
-							{
-								"key": "email",
-								"value": "kartiksehgal3@gmail.com"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json; charset=utf-8"
-							},
-							{
-								"key": "Content-Length",
-								"value": "194",
-								"disabled": true
-							},
-							{
-								"key": "Host",
-								"value": "mobileapi.snapdeal.com"
-							},
-							{
-								"key": "Connection",
-								"value": "Keep-Alive"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"source\": \"APP\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pageNumber\": \"0\",\r\n\t\"lastInvocationTS\": \"0\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pageSize\": \"5\",\r\n\t\"email\": \"kartiksehgal3@gmail.com\",\r\n\t\"apiKey\": \"snapdeal\"\r\n}"
-						},
-						"url": {
-							"raw": "https://mobileapi.snapdeal.com/service/order/recentUpdatedOrders",
-							"protocol": "https",
-							"host": [
-								"mobileapi",
-								"snapdeal",
-								"com"
-							],
-							"path": [
-								"service",
-								"order",
-								"recentUpdatedOrders"
-							]
-						},
-						"description": "Recent Update Orders"
-					},
-					"response": []
-				},
-				{
 					"name": "Referral - registerDeviceInfo",
 					"request": {
 						"method": "POST",
@@ -6299,6 +6023,19 @@
 				},
 				{
 					"name": "Referral - checkIfDeviceIsAlreadyRegistered",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5c3cb9b4-6dcc-4bf1-a7a8-d55428655933",
+								"type": "text/javascript",
+								"exec": [
+									"postman.setNextRequest(Null);",
+									""
+								]
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -6408,6 +6145,115 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "My Orders - recentUpdatedOrders",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "v",
+								"value": "6.5.6"
+							},
+							{
+								"key": "deviceId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "androidId",
+								"value": "290b4bc0d40591e"
+							},
+							{
+								"key": "networkType",
+								"value": "wifi"
+							},
+							{
+								"key": "Login-Token",
+								"value": "SD:Vzg3Y7c_liGZYGiBRgVWo9hOZhW7lopASNzA1sE6zk58lMMnaK3mevWzzA4Fs0KT0ACxNWGwwRAU9ea5Ff5ihUkjnjgWFFHAG1ko_-GqNv7Ur4PpJe4KnR6fAlL_2pUC"
+							},
+							{
+								"key": "visitor_id",
+								"value": "25B236A1C6334F07-281CC0266240A577"
+							},
+							{
+								"key": "lan_ip",
+								"value": "10.20.86.25"
+							},
+							{
+								"key": "api_key",
+								"value": "snapdeal"
+							},
+							{
+								"key": "instanceId",
+								"value": "e1b68f81-0267-43ee-b6c7-51a7d4d2acad"
+							},
+							{
+								"key": "os_version",
+								"value": "7.0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Xiaomi Redmi Note 4"
+							},
+							{
+								"key": "os",
+								"value": "android"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "xc",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+							},
+							{
+								"key": "xg",
+								"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDI3MDAzMzI3OA=="
+							},
+							{
+								"key": "email",
+								"value": "kartiksehgal3@gmail.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Length",
+								"value": "194",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "mobileapi.snapdeal.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"source\": \"APP\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pageNumber\": \"0\",\r\n\t\"lastInvocationTS\": \"0\",\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"pageSize\": \"5\",\r\n\t\"email\": \"kartiksehgal3@gmail.com\",\r\n\t\"apiKey\": \"snapdeal\"\r\n}"
+						},
+						"url": {
+							"raw": "https://mobileapi.snapdeal.com/service/order/recentUpdatedOrders",
+							"protocol": "https",
+							"host": [
+								"mobileapi",
+								"snapdeal",
+								"com"
+							],
+							"path": [
+								"service",
+								"order",
+								"recentUpdatedOrders"
+							]
+						},
+						"description": "Recent Update Orders"
+					},
+					"response": []
 				}
 			]
 		}
@@ -6429,9 +6275,8 @@
 				"id": "7b35b040-f2c8-4370-a8a3-28443f286f19",
 				"type": "text/javascript",
 				"exec": [
-					"pm.test(\"Status code is 200\", function(){",
-					"    pm.response.to.have.status(200);",
-					"});"
+					"var data = JSON.parse(responseBody);",
+					"tests[\"success\"] =  data.successful === true;"
 				]
 			}
 		}
