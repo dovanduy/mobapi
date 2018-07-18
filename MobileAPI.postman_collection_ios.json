@@ -48,7 +48,8 @@
 					},
 					{
 						"key": "Content-Length",
-						"value": "70"
+						"value": "70",
+						"disabled": true
 					},
 					{
 						"key": "deviceID",
@@ -110,36 +111,64 @@
 		},
 		{
 			"name": "Account - getUserCoupons",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2519661a-1634-4cc2-9c99-4b4f474fadb5",
+						"type": "text/javascript",
+						"exec": [
+							"postman.setNextRequest(\"Login - LoginWithEmail\");"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "26acc4e1-2f39-4e9e-861c-148786f3140b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Host",
-						"value": "mobileapi.snapdeal.com"
+						"value": "mobileapi.snapdeal.com",
+						"disabled": true
 					},
 					{
 						"key": "xg",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDUyNzk1OTg5OQ=="
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDUyNzk1OTg5OQ==",
+						"disabled": true
 					},
 					{
 						"key": "User-Agent",
-						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)",
+						"disabled": true
 					},
 					{
 						"key": "Cookie",
-						"value": "SCOUTER=z53a1gkf0i31kd; advId=; alps=aoc; androidId=; appType=app; appVersion=; avc=; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; instanceId=; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; platformType=ios; sd.zone=Z17; siteId=; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153052307351833777; visitorId=2D9CEB1F852A2D2A-600001036030EADF; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C"
+						"value": "SCOUTER=z53a1gkf0i31kd; advId=; alps=aoc; androidId=; appType=app; appVersion=; avc=; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; instanceId=; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; platformType=ios; sd.zone=Z17; siteId=; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153052307351833777; visitorId=2D9CEB1F852A2D2A-600001036030EADF; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C",
+						"disabled": true
 					},
 					{
 						"key": "Login-Token",
-						"value": "SD:Vzg3Y7c_liGZYGiBRgVWo3DNmpOInFkIW_5BIxvTwNLk-RYAzZnB2IBHKQJeD10ouo3mZ5x7634xqOGkVPWvMU_CpPupiL5lK2-XaNbMd9vblbLr0DDXQATUt3hnCpMJ"
+						"value": "{{token}}"
 					},
 					{
 						"key": "visitor_id",
-						"value": "2D9CEB1F852A2D2A-600001036030EADF"
+						"value": "2D9CEB1F852A2D2A-600001036030EADF",
+						"disabled": true
 					},
 					{
 						"key": "lan_ip",
-						"value": "10.20.86.16"
+						"value": "10.20.86.16",
+						"disabled": true
 					},
 					{
 						"key": "os",
@@ -156,19 +185,23 @@
 					},
 					{
 						"key": "deviceID",
-						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F",
+						"disabled": true
 					},
 					{
 						"key": "Connection",
-						"value": "keep-alive"
+						"value": "keep-alive",
+						"disabled": true
 					},
 					{
 						"key": "xc",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ==",
+						"disabled": true
 					},
 					{
 						"key": "Accept-Language",
-						"value": "en-IN;q=1"
+						"value": "en-IN;q=1",
+						"disabled": true
 					},
 					{
 						"key": "os_version",
@@ -176,7 +209,8 @@
 					},
 					{
 						"key": "Accept",
-						"value": "*/*"
+						"value": "*/*",
+						"disabled": true
 					},
 					{
 						"key": "Content-Type",
@@ -184,11 +218,13 @@
 					},
 					{
 						"key": "Accept-Encoding",
-						"value": "gzip, deflate"
+						"value": "gzip, deflate",
+						"disabled": true
 					},
 					{
 						"key": "key",
-						"value": "snapdeal"
+						"value": "snapdeal",
+						"disabled": true
 					}
 				],
 				"body": {
@@ -812,110 +848,6 @@
 						"service",
 						"referralv2",
 						"getReferralCount"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Orders - recentUpdatedOrders",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Host",
-						"value": "mobileapi.snapdeal.com"
-					},
-					{
-						"key": "xg",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDUyNzM0NTU5OQ=="
-					},
-					{
-						"key": "User-Agent",
-						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
-					},
-					{
-						"key": "Cookie",
-						"value": "SCOUTER=z53a1gkf0i31kd; advId=; alps=aoc; androidId=; appType=app; appVersion=; avc=; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; instanceId=; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; platformType=ios; sd.zone=Z17; siteId=; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153052307351833777; visitorId=2D9CEB1F852A2D2A-600001036030EADF; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C"
-					},
-					{
-						"key": "Login-Token",
-						"value": "SD:Vzg3Y7c_liGZYGiBRgVWo3DNmpOInFkIW_5BIxvTwNLk-RYAzZnB2IBHKQJeD10ouo3mZ5x7634xqOGkVPWvMU_CpPupiL5lK2-XaNbMd9vblbLr0DDXQATUt3hnCpMJ"
-					},
-					{
-						"key": "visitor_id",
-						"value": "2D9CEB1F852A2D2A-600001036030EADF"
-					},
-					{
-						"key": "lan_ip",
-						"value": "10.20.86.16"
-					},
-					{
-						"key": "os",
-						"value": "ios"
-					},
-					{
-						"key": "v",
-						"value": "5.0.1"
-					},
-					{
-						"key": "Content-Length",
-						"value": "249",
-						"disabled": true
-					},
-					{
-						"key": "deviceID",
-						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
-					},
-					{
-						"key": "Connection",
-						"value": "keep-alive"
-					},
-					{
-						"key": "xc",
-						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
-					},
-					{
-						"key": "Accept-Language",
-						"value": "en-IN;q=1"
-					},
-					{
-						"key": "os_version",
-						"value": "9.3.4"
-					},
-					{
-						"key": "Accept",
-						"value": "*/*"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "Accept-Encoding",
-						"value": "gzip, deflate"
-					},
-					{
-						"key": "key",
-						"value": "snapdeal"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\t\"pageSize\": 5,\r\n\t\"source\": \"\",\r\n\t\"channel\": \"APP\",\r\n\t\"pageNumber\": 0,\r\n\t\"requiredPaymentInfo\": false,\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"email\": \"VjUwIzUzZTk3NmJlLTExMmQtNDEwMy05ZmU4LTFkMzZiMGM0ZWE5Yw@snpde.in\",\r\n\t\"lastInvocationTS\": 0\r\n}"
-				},
-				"url": {
-					"raw": "https://mobileapi.snapdeal.com/service/order/recentUpdatedOrders",
-					"protocol": "https",
-					"host": [
-						"mobileapi",
-						"snapdeal",
-						"com"
-					],
-					"path": [
-						"service",
-						"order",
-						"recentUpdatedOrders"
 					]
 				}
 			},
@@ -3888,7 +3820,8 @@
 					},
 					{
 						"key": "Content-Length",
-						"value": "223"
+						"value": "223",
+						"disabled": true
 					},
 					{
 						"key": "os_version",
@@ -4837,6 +4770,20 @@
 		},
 		{
 			"name": "Account - getUserCoupons",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a76efbcf-f483-4047-995b-f09aa45b2e8b",
+						"type": "text/javascript",
+						"exec": [
+							"postman.setNextRequest(\"Login - linkEmailToMobileOnlyAccount\");",
+							"",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -4858,7 +4805,7 @@
 					},
 					{
 						"key": "Login-Token",
-						"value": "SD:Vzg3Y7c_liGZYGiBRgVWoxo9W_qF-UDkgVv0d3sqnvRBavOpfyOcgNfCae5YrhB5aNOAMqqv13JfCfYR6TrMyWSdgZAMEdWxmGY-krAdjW5jJrpfUEDSxyyteQKhXobH"
+						"value": "{{token}}"
 					},
 					{
 						"key": "visitor_id",
@@ -5548,6 +5495,18 @@
 		},
 		{
 			"name": "Login - resendOTP",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "135defb4-08cf-4316-bd7b-5d324e870be4",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -5871,6 +5830,233 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Orders - recentUpdatedOrders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fXx8MTUzMDUyNzM0NTU5OQ=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 9.3.4; Scale/2.00)"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=z53a1gkf0i31kd; advId=; alps=aoc; androidId=; appType=app; appVersion=; avc=; deviceId=B13F8B84-693F-478A-A93A-8F646156E06F; deviceos=iPhone; instanceId=; lt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; platformType=ios; sd.zone=Z17; siteId=; st=utm_source%3DDIRECT%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C; u=153052307351833777; visitorId=2D9CEB1F852A2D2A-600001036030EADF; vt=utm_source%3DiPhoneApp%7Cutm_content%3Dnull%7Cutm_medium%3Dnull%7Cutm_campaign%3Dnull%7Cref%3Dnull%7Cutm_term%3Dnull%7C"
+					},
+					{
+						"key": "Login-Token",
+						"value": "SD:Vzg3Y7c_liGZYGiBRgVWo3DNmpOInFkIW_5BIxvTwNLk-RYAzZnB2IBHKQJeD10ouo3mZ5x7634xqOGkVPWvMU_CpPupiL5lK2-XaNbMd9vblbLr0DDXQATUt3hnCpMJ"
+					},
+					{
+						"key": "visitor_id",
+						"value": "2D9CEB1F852A2D2A-600001036030EADF"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.16"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "249",
+						"disabled": true
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk4cCJ9fQ=="
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "os_version",
+						"value": "9.3.4"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"pageSize\": 5,\r\n\t\"source\": \"\",\r\n\t\"channel\": \"APP\",\r\n\t\"pageNumber\": 0,\r\n\t\"requiredPaymentInfo\": false,\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"email\": \"VjUwIzUzZTk3NmJlLTExMmQtNDEwMy05ZmU4LTFkMzZiMGM0ZWE5Yw@snpde.in\",\r\n\t\"lastInvocationTS\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/order/recentUpdatedOrders",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"order",
+						"recentUpdatedOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - LoginWithEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "mobileapi.snapdeal.com"
+					},
+					{
+						"key": "lan_ip",
+						"value": "10.20.86.25"
+					},
+					{
+						"key": "Cookie",
+						"value": "SCOUTER=z5o8qc0cev011i"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "os",
+						"value": "ios"
+					},
+					{
+						"key": "key",
+						"value": "snapdeal"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-IN;q=1"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "deviceID",
+						"value": "B13F8B84-693F-478A-A93A-8F646156E06F"
+					},
+					{
+						"key": "xg",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fXx8MTUzMTkxMTk0MTE3OA=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "SnapDeal/5.0.1 (iPhone; iOS 11.4; Scale/2.00)"
+					},
+					{
+						"key": "visitor_id",
+						"value": "07F7F8C5A36146DF-1CC4085EF87B8B0E"
+					},
+					{
+						"key": "os_version",
+						"value": "11.4"
+					},
+					{
+						"key": "xc",
+						"value": "eyJzYyI6eyJzaGlwcGluZ19pbnRlcnZhbCI6Ijk1cCJ9fQ=="
+					},
+					{
+						"key": "v",
+						"value": "5.0.1"
+					},
+					{
+						"key": "Content-Length",
+						"value": "140"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"requestProtocol\": \"PROTOCOL_JSON\",\r\n\t\"responseProtocol\": \"PROTOCOL_JSON\",\r\n\t\"emailId\": \"shivam.gandhi.in@snapdeal.com\",\r\n\t\"password\": \"Motherdairy_03\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mobileapi.snapdeal.com/service/user/login/v2/loginWithEmail",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"snapdeal",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"login",
+						"v2",
+						"loginWithEmail"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e053b671-00dd-48fa-bcb0-fabc847cb8f1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9c0da809-8839-4a4b-9d44-20a32b04bb49",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
